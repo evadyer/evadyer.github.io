@@ -5,7 +5,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                     
-                    <title>BigNeuro NIPS Workshop</title>
+                    <title>Eva Dyer</title>
                     
                     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
                         <link href="assets/css/main.css" rel="stylesheet">
@@ -15,14 +15,15 @@
     
 <body id="page-top">
     <div class="header-navbar">
-        <h1 class="header-navbar-logo">BigNeuro NIPS Workshop</h1>
+        <h1 class="header-navbar-logo">Making sense of big neural datasets...</h1>
         
         <div class="header-navbar-hamburger"></div>
         <ul class="header-navbar-items">
             <li class="header-navbar-item"><a href="#about" class="header-navbar-link">About</a></li>
-            <li class="header-navbar-item"><a href="#faq" class="header-navbar-link">FAQ</a></li>
-            <li class="header-navbar-item"><a href="#schedule" class="header-navbar-link">Schedule</a></li>
-            <li class="header-navbar-item"><a href="#posters" class="header-navbar-link">Posters</a></li>
+            <li class="header-navbar-item"><a href="#projects" class="header-navbar-link">Projects</a></li>
+            <li class="header-navbar-item"><a href="#papers" class="header-navbar-link">Papers</a></li>
+            <li class="header-navbar-item"><a href="#code" class="header-navbar-link">Code</a></li>
+            <li class="header-navbar-item"><a href="#data" class="header-navbar-link">Data</a></li>
         </ul>
     </div>
     
@@ -31,12 +32,9 @@
         <div class="header-pcb"></div>
         <div class="header-bg"></div>
         <div class="header-text">
-            <h2 class="header-text-headline">BigNeuro Workshop @ NIPS
+            <h3 class="header-text-headline">Making sense of big neural datasets...
                 <!-- <span class="beating-heart fa fa-heart"></span> -->
-            </h2>
-            <h4 class="header-text-byline">Making sense of big neural data<strong></strong></h4>
-            <h4 class="header-text-byline">Where: Palais des Congrès de Montréal, Montreal, Canada<strong></strong></h4>
-            <h4 class="header-text-byline">When:  <strong>Saturday Dec. 12th, 2015</strong>
+            </h3>
                 </div>
     </div>
     
@@ -44,266 +42,206 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="descr-title info-heading">BigNeuro 2015</h1>
+                    <h1 class="descr-title info-heading">About me...</h1>
                     <p class="lead info-para">
-                    Advances in optics, chemistry, and physics have revolutionized the development of experimental methods for measuring neural activity and structure. Some of the next generation methods for neural recording promise extremely large and detailed measurements of the brain’s architecture and function. The goal of this workshop is to provide an open forum for the discussion of a number of important questions related to how machine learning can aid in the analysis of these next generation neural datasets. What are some of the new machine learning and analysis problems that will arise as new experimental methods come online? What are the right distributed and/or parallel processing computational models to use for these different datasets? What are the computational bottlenecks/challenges in analyzing these next generation datasets?
+                    I am currently a Research Scientist in the <a href="http://kordinglab.com/" style="color: rgb(139,0,139)">Bayesian Behavior Lab</a> at Northwestern University's Rehabilitation Institute of Chicago. I work with Konrad Körding on numerous projects related to large-scale neuroanatomy and optimization. I completed my Ph.D. in Electrical & Computer Engineering at Rice University under the supervision of <a href="http://web.ece.rice.edu/richb/" style="color: rgb(139,0,139)">Richard Baraniuk</a> in 2014. While at Rice, I had the opportunity to co-design and serve as the Matlab content guru for the initial launch of 301x, an <a href="https://www.edx.org/course/discrete-time-signals-systems-part-1-ricex-elec301-1x" style="color: rgb(139,0,139)"> edX course on Discrete-Time Signals and Systems</a>. Before that, I received a BSEE from the University of Miami, where I completed a double major in Audio Engineering and Physics. At the University of Miami, I worked for the Edward Arnold Center for Confluent Media Studies as a multimedia designer and an assistant sound designer for the documentary <a href="http://www.onewater.org/movie" style="color: rgb(139,0,139)"> One Water: A collaborative effort for a sustainable future</a>.
                     </p>
                 </div>
             </div>
         </div>
     </div>
     
-    <div id="faq" class="faq">
-        <h2 class="heading-faq">FAQ</h2>
-        
-        <p class="faq-additional-questions"><strong>Have a question</strong> that isn't addressed below? Email us at <a href="mailto:bigneurodata@gmail.com">bigneurodata@gmail.com</a></p>
+    <div id="projects" class="faq">
+        <h2 class="heading-faq">Projects</h2>       
+        <p class="faq-additional-questions"><Want to get in touch? Send me an email at bigneurodata@gmail.com</a></p>
         
         <div class="faq-column">
             <div class="faq-box">
-                <h3>What is the format?</h3>
-                <p> In the morning, the goal will be to discuss new experimental techniques and the computational issues associated with analyzing these datasets. The morning portion of the workshop will be organized into three hour-long sessions. Each session will start with a 30 minute overview of an experimental method, presented by a leading experimentalist in this area. Afterwards, we will have a 30 minute follow up from a computational scientist that will highlight the computational challenges associated with the technique.</p>
-                <p> In the afternoon, the goal will be to delve deeper into the kinds of techniques that will be needed in the future to deal with the data described in the morning. To highlight two computational approaches that we believe hold promise, we will have two hour long methods talks. These talks will be followed by a scientist with big-data experience outside of neuroscience with the goal of thinking about organization, objectives, and pitfalls.</p>
-                
-                <p> Lastly we will have plenty of time for free form discussion and hold a poster session. We envision that this workshop will provide a forum for computational neuroscientists and data scientists to discuss the major challenges that we will face in analyzing big neural datasets over the next decade.</p>
+                <h3>High-throughput methods for quantifying neuroanatomy</h3>
+                <p>I am actively developing methods for high-throughput neuroanatomy that utilize both X-ray microtomography and electron microscopy (EM). Our main aim is to use X-rays to perform mesoscale (1 micron) analyses on brain volumes without sectioning. This technique provides high data rates, high resolution (at mesoscale), and volumes that provides dense labeling of cell bodies, vessels, and large neurites (myelinated axons and apical dendrites). After X-ray imaging, we then apply serial EM to the same samples to obtain nanoscale (connectomics) information. 
+
+                <p>This is highly multi-disciplinary collaboration between researchers at Northwestern, University of Chicago, and Argonne National Laboratory.</p>
+
+				<h4><strong>Related publications:</strong></h4>
+                <p>Dyer et al., 2016. Quantifying mesoscale neuroanatomy using X-ray microtomography (<a href="http://docs.neurodata.io/xbrain" style="color: rgb(139,0,139)">web</a>) </p>
+     
             </div>
+
             <div class="faq-box">
-                <h3>Who can participate?</h3>
-                <p>We welcome participants from the machine learning community, data scientists, and neuroscientists alike!</p>
+                <h3>Scalable methods for optimization</h3>
+                <p>Non-convex optimization methods, with provable guarantees, is difficult. We introduce CoRR for black-box global optimization. Previously, with Azalia Mirhoseini and Farinaz Koushanfar, I worked on RankMap. RankMap is a framework for the distributed execution of a broad class of iterative optimization problems. </p>
+
+                <h4><strong>Relevant publications:</strong></h4>
+                <p>Convex Relaxation Regression (CoRR): Black-box optimization of a smooth function by learning its convex envelope (<a href="http://docs.neurodata.io/xbrain" style="color: rgb(139,0,139)">web</a>) </p>
+                <p>RankMap: Title goes here (<a href="http://docs.neurodata.io/xbrain" style="color: rgb(139,0,139)">web</a>) </p>
+
             </div>
-            <!--             <div class="faq-box">
-             <h3>What can I win?</h3>
-             <p>It's not about winning - it's about learning, having fun, and starting the renaissance of medical innovation! In addition, winners will be chosen by a judging panel based on criteria such as technical difficulty, creativity, and impact. Many sponsors will also give out cool prizes for hacks that excel in specific categories.</p>
-             </div> -->
         </div>
         
         <div class="faq-column">
-            <!--             <div class="faq-box">
-             <h3>What is a Medical Hackathon?</h3>
-             <p>Drawing on the popular concept of hackathons being held around the world, we are challenging innovators to design solutions to the most pressing medical issues of our day within 36 hours. MedHackers will work (and play) in interdisciplinary teams over the weekend, utilizing the unique skillset of each team member to build the best solution to a critical medical problem. Along the way, hackers will eat together, code together, learn together, and design together before presenting their finished product (together) to a panel of judges.</p>
-             </div> -->
             <div class="faq-box">
-                <h3>But I know nothing about neuroscience?!</h3>
-                <p>If you don't know about neuroscience, don’t worry - we will introduce the basics behind some promising big neuro datasets and their associated computational challenges! This will set the stage for the afternoon talks and discussion, where we can talk about how machine learning can aid in analyzing these datasets. </p>
+                <h3>Low-dimensional signal models </h3>
+                <p> Unions of subspaces are a powerful generalization of single subspace models, which model data points as living on multiple subspaces, rather than assuming a global low-dimensional model. Modeling data with mixtures of subspaces provides a more compact and simple representation of the data. In these cases, finding multiple subspaces, or subspace clustering, can provide a better partitioning (clustering) of the data or also help to denoise the data.
+
+                <h4><strong>Related publications:</strong></h4>
+                <p>Greedy feature selection for subspace clustering, JMLR 2013. (<a href="http://www.jmlr.org/papers/volume14/dyer13a/dyer13a.pdf" style="color: rgb(139,0,139)">paper</a>)</p>
+				
+				<p>Greedy feature selection for subspace clustering, JMLR 2013. (<a href="http://www.jmlr.org/papers/volume14/dyer13a/dyer13a.pdf" style="color: rgb(139,0,139)">paper</a>)</p>
+
             </div>
             <div class="faq-box">
-                <h3>When is BigNeuro?</h3>
+                <h3>Methods for analyzing functional neural data</h3>
                 <p>
-                The workshop is part of the NIPS workshop program, held at the Palais des Congrès de Montréal, in Montreal, Canada. The event will take place from 9:00-18:30 on Saturday Dec 12th, 2015.
-                <!-- Hack@NeuroData 2015 will take place from Friday, October 2nd to Sunday, October 4th. -->
+                I am currently developing methods for brain decoding that exploit low-dimensional structure in neural data to learn a decoder of brain activity without known correspondence between the input and outputs to the system. In the past, I also worked on methods for decoding spikes from neuronal calcium time-series.
                 </p>
-            </div>
-            <!--             <div class="faq-box">
-             <h3>How will I get there?</h3>
-             <p>Hack@NeuroData is able to offer a limited number of travel grants for participants coming from outside the Baltimore metro area. If you are in need of assistance in attending Hack@NeuroData, and live outside the Baltimore area, please send an email to <a href="mailto:travel@Hack@NeuroData.org">travel@Hack@NeuroData.org</a>. </p>
-             
-             <p>For participants coming to the Homewood Campus from other Johns Hopkins Institutions, the JHMI shuttle is recommended. The JHMI Shuttle schedule is available <a href="http://ts.jhu.edu/Shuttles/Shuttle_Schedules/Homewood_JHMI_Shuttle_Schedule.pdf">here</a>.</p>
-             
-             <p>For those traveling to Hack@NeuroData by train (Amtrak and MARC Penn Line) via Baltimore Penn Station, the JHMI shuttle stops at Penn Station and heads north to the Homewood Campus (its northernmost stop). Taxis are also available at Penn Station for the 10 minute drive to the Homewood Campus, and should cost approximately $7.</p>
-             </div>      -->
-            <div class="faq-box">
-                <h3>What is the basic schedule?</h3>
-                <p>
-                The morning session will introduce three experimental techniques that are currently generating big neural datasets. The afternoon session will focus on promising computational methods for analyzing these data. </p>
-                
-                <p> At the end of the day, we will have a open discussion about how machine learning can help in analyzing and making sense of big neural datasets. </p>
+
+                <h4><strong>Related publications:</strong></h4>
+                <p>Cryptography-inspired brain decoding (<a href="http://kordinglab.com/DAD/" style="color: rgb(139,0,139)">web</a>)</p>
+                <p>Neural event recovery via detection and sparsity (NERDS). (<a href="http://www.jmlr.org/papers/volume14/dyer13a/dyer13a.pdf" style="color: rgb(139,0,139)">paper</a>, <a href="http://www.jmlr.org/papers/volume14/dyer13a/dyer13a.pdf" style="color: rgb(139,0,139)">code</a>)</p>
+
             </div>
         </div>
         
         
     </div>
     
-    
-    <div id="schedule" class="schedule">
+    <div id="papers" class="schedule">
         <div class="container">
             <div class="row">
-                <h2 class="section-apply-heading text-center">Schedule</h2>
+                <h2 class="section-apply-heading text-center">Papers</h2>
                 <div class="col-lg-8 col-lg-offset-2">
-                    
-                    <p class="lead info-para text-center">Morning Session | Room 511e</p>
-                    <table class="table">
-                        <th>Time</th>
-                        <th></th>
-                        <th></th>
-                        <tr>
-                            <td>7:30am</td>
-                            <td>Breakfast</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>8:50-9:00</td>
-                            <td>Opening Remarks</td>
-                            <td>511e</td>
-                        </tr>
-                        <tr>
-                            <td>9:00-9:30</td>
-                            <td><a href="https://www.crick.ac.uk/andreas-schaefer" style="color: rgb(204,229,255)">Andreas Schaefer</a>, High-density electrical recordings (Methods overview)</td>
-                            <td>511e</td>
-                        </tr>
-                        <tr>
-                            <td>9:30-10:00</td>
-                            <td><a href="http://klab.smpp.northwestern.edu/" style="color: rgb(204,229,255)">Konrad Kording</a>, High-density electrical recordings (Computational approaches + challenges)</td>
-                            <td>511e</td>
-                        </tr>
-                        <tr>
-                            <td>10:00-10:20</td>
-                            <td>Morning Coffee Break</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>10:20-10:50</td>
-                            <td><a href="http://toliaslab.org/" style="color: rgb(204,229,255)">Andreas Tolias</a>, High-resolution tools for connectomics (Methods overview)</td>
-                            <td>511e</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>10:50-11:20</td>
-                            <td><a href="http://www.cs.jhu.edu/~randal/" style="color: rgb(204,229,255)">Randal Burns</a>, High-resolution tools for connectomics (Computational approaches + challenges)</td>
-                            <td>511e</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>11:20-11:50</td>
-                            <td><a href="http://web.stanford.edu/group/dlab/" style="color: rgb(204,229,255)">Aaron Andalman</a>, Whole-brain optical methods (Methods overview)</td>
-                            <td>511e</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>11:50-12:20</td>
-                            <td><a href="http://sapirolab.pratt.duke.edu/" style="color: rgb(204,229,255)">Guillermo Sapiro</a>, Whole-brain optical methods (Computational approaches + challenges)</td>
-                            <td>511e</td>
-                        </tr>
-                        
-                        </table>
-                        
-                        <p class="lead info-para text-center">Poster Session | Room 511e</p>
-                        <table class="table">
-                            <th>Time</th>
-                            <th></th>
-                            <th></th>
+                    <h3><a id="In_the_pipeline_0"></a>In the pipeline…</h3>
+<ul>
+<li>
+<p><strong>E.L. Dyer</strong>, W.G. Roncal, H.L. Fernandes, D. Gürsoy, V. De Andrade, R. Vescovi, K. Fezzaa, X. Xiao, J.T. Vogelstein, C. Jacobsen, K.P. Körding and N. Kasthuri, <em>Quantifying mesoscale neuroanatomy using X-ray microtomography</em>  (<a href="http://dl.dropboxusercontent.com/u/1260288/Papers/Dyer_Xbrain2016.pdf">Paper</a>, <a href="http://github.com/neurodata/xbrain/tree/master/code">Code</a>, <a href="http://github.com/neurodata/xbrain/tree/master/data">Data</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, M. Azar, H.L. Fernandes, M. Perich, L.E. Miller, and K.P. Körding: <em>Cracking the neural code: A cryptography-inspired approach to brain decoding</em> (<a href="http://kordinglab.com/DAD/">Web</a>, <a href="http://www.dropbox.com/s/qqdabo7drryq42m/Dyer_DAD2016.pdf?dl=0">Paper</a>)&lt;br&gt;</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, W.G. Roncal, D. Gürsoy, R. Vescovi, K.P. Körding, N. Kasthuri: <em>From sample to knowledge: Towards an integrated approach for neuroscience discovery</em> &lt;br&gt;</p>
+</li>
+<li>
+<p>A. Mirhoseini, <strong>E.L. Dyer</strong>, E. Songhori, R.G. Baraniuk, and F. Koushanfar, <em>RankMap: A platform-aware framework for distributed learning from dense datasets</em>, (<a href="http://arxiv.org/abs/1503.08169">Paper</a>, <a href="https://github.com/azalia/RankMap">Code</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, T.A. Goldstein, R.J. Patel, K.P. Körding, and R.G. Baraniuk: <em>Sparse self-expressive decompositions for matrix approximation and clustering</em> (<a href="http://arxiv.org/abs/1505.00824">Paper</a>, <a href="">Code</a>)</p>
+</li>
+</ul>
 
-                        <tr>
-                                <td>12:20-12:25</td>
-                                <td>Furong Huang, <em> Discovering neuronal cell types and their gene expression profiles using a spatial point process mixture model</em> (Poster Spotlight)</td>
-                                <td>511e</td>
-                        </tr>
+<h3><a id="Publications_12"></a>Publications</h3>
+<ul>
+<li>
+<p>M. Azar, <strong>E.L. Dyer</strong>, and K.P. Körding, <em>Convex relaxation regression: Black-Box optimization of smooth functions by learning their convex envelopes</em>, Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI), June 2016. (<a href="http://arxiv.org/abs/1602.02191">Paper</a>, <a href="https://dl.dropboxusercontent.com/u/1260288/Posters/Dyer_UAI2016.png">Poster</a>, <a href="https://dl.dropboxusercontent.com/u/1260288/Talks/Dyer_UAI2016.pdf">Slides</a>)&lt;br&gt;</p>
+</li>
+<li>
+<p>R.J. Patel, T.A. Goldstein, <strong>E.L. Dyer</strong>, A. Mirhoseini, and R.G. Baraniuk, <em>Deterministic column sampling for low rank approximation: Nystrom vs. Incomplete Cholesky Decomposition</em>, SIAM Data Mining (SDM) Conference, May 2016. (<a href="https://www.dropbox.com/s/o4wl96k2hdxxuhf/Patel_SDM2016.pdf?dl=0">Paper</a>, <a href="https://bitbucket.org/rjp2/oasis/">Code</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, A.C. Sankaranarayanan, and R.G. Baraniuk, <em>Greedy feature selection for subspace clustering</em>, The Journal of Machine Learning Research 14 (1), 2487-2517, September, 2013. (<a href="https://www.dropbox.com/s/ll13utoiezvnbc6/Dyer_JMLR13.pdf?dl=0">Paper</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, C. Studer, J.T. Robinson, and R.G Baraniuk, <em>A robust and efficient method to recover neural events from noisy and corrupted data</em>, IEEE EMBS Neural Engineering (NER) Conference, 2013. (<a href="https://www.dropbox.com/s/9bse7aly4bqh2d0/Dyer_EMBS2014.pdf?dl=0">Paper</a>, <a href="https://github.com/KordingLab/nerds">Code</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, C. Studer, and R.G Baraniuk, <em>Subspace clustering with dense representations</em>, IEEE International Conf. on Signal Processing (ICASSP) 2013 Proceedings, Vancouver, BC, 2013. (<a href="https://www.dropbox.com/s/7yr34ifdhbbp4h7/Dyer_ICASSP2013.pdf?dl=0">Paper</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, M. Majzoobi, F. Koushanfar, <em>Hybrid modeling of non-stationary process variations</em>, IEEE/ACM Design and Automation Conference (DAC) 2011 Proceedings, San Diego, CA, 2011. (<a href="https://www.dropbox.com/s/ez16ijczply4fvq/Dyer_DAC2011.pdf?dl=0">Paper</a>)</p>
+</li>
+<li>
+<p>M. Majzoobi, <strong>E.L. Dyer</strong>, A. Enably, and F. Koushanfar, <em>Rapid FPGA characterization using clock synthesis and signal sparsity</em>, IEEE International Test Conference (ITC) 2010 Proceedings, Austin, TX, November 2010. (<a href="https://www.dropbox.com/s/0llytz2o5iw47mq/Majzoobi_ITC2010.pdf?dl=0">Paper</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, M.F. Duarte, D.H. Johnson, and R.G. Baraniuk, <em>Recovering spikes from noisy neuronal calcium signals via structured sparse approximation</em>, Lecture Notes in Computer Science, LVA/ICA 2010, Volume 6365/2010, 604-611. (<a href="https://www.dropbox.com/s/8qy8n8yeozsyqxf/Dyer_LVA2010.pdf?dl=0">Paper</a>)</p>
+</li>
+<li>
+<p>G. Fischer, <strong>E.L. Dyer</strong>, C. Csoma, A. Deguet, and G. Fichtinger, <em>Validation system for MR image overlay and other needle insertion techniques</em>, Medicine Meets Virtual Reality 15- in vivo, in vitro, in silico: Designing the Next in Medicine, IOS Press, 2007. (<a href="https://www.dropbox.com/s/qkaaae97gafxug5/Fischer_MMVR15.pdf?dl=0">Paper</a>)</p>
+</li>
+</ul>
 
-                        <tr>
-                            <td>12:25-12:30</td>
-                            <td>Tom Goldstein, <em>Distributed model fitting with transpose reduction ADMM</em> (Poster Spotlight)</td>
-                            <td>511e</td>
-                            
-                        </tr>
-                        
-                        
-                        
-                        <tr>
-                            <td>12:30-12:35</td>
-                            <td>William Gray Roncal, <em>Images to graphs for inference</em> (Poster Spotlight)</td>
-                            <td>511e</td>
-                            
-                        </tr>
-                        
-                        <tr>
-                            <td>13:00-14:00</td>
-                            <td>Poster Session</td>
-                            <td>511e</td>
-                        </tr>
-                    </table>
-                    
-                    
-                    <p class="lead info-para text-center">Afternoon Session | Room 511e</p>
-                    <table class="table">
-                        <th>Time</th>
-                        <th></th>
-                    <th></th>
-                    
-                    
-                    <tr>
-                        <td>14:00-14:40</td>
-                        <td><a href="http://www.sdss.jhu.edu/~szalay/" style="color: rgb(204,229,255)">Alex Szalay</a>, Lessons learned from big data projects in cosmology </td>
-                        <td>511e</td>
-                    </tr>
+<h3><a id="Abstracts_33"></a>Abstracts</h3>
+<ul>
+<li>
+<p>R. Vescovi, E. Miqueles, D. Gursoy, V. De Andrade, <strong>E.L. Dyer</strong>, K. Kording, M. Cardoso, F. De Carlo, C. Jacobsen, N. Kasthuri. <em>TOMOSAIC: Towards Terabyte Tomography</em>, submitted to X-ray microscopy (XRM), 2016.</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, H.L. Fernandes, X. Xiao, W. Gray Roncal, J.T. Vogelstein, C. Jacobsen, K.P. Körding and N. Kasthuri, <em>Quantifying mesoscale neuroanatomy using X-ray microtomography</em>, presented at the Society for Neuroscience (SFN) Annual Meeting in October 2015 and the Annual Statistical Analysis of Neural Data (SAND) Meeting in May 2015.(<a href="https://www.dropbox.com/s/dcp0gp8bttgf3bz/Dyer_SFN2015.pdf?dl=0">Abstract</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, T.A. Goldstein, R. Patel, K.P. Körding, and R.G. Baraniuk, <em>Sparse Self-Expressive Decompositions for Dimensionality Reduction and Clustering</em>, Signal Processing with Adaptive Sparse Structured Representations (SPARS), July, 2015. (<a href="https://www.dropbox.com/s/vle719pfb6os1cy/Dyer_SPARS2015.pdf?dl=0">Abstract</a>)</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, D.B. Murphy, R.G. Baraniuk, and J.T Robinson, <em>Compressive neural circuit reconstruction using patterned optical stimulation</em>, Society for Neuroscience (SFN) Annual Meeting, 2013.</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, C. Studer, and R.G Baraniuk, <em>Subspace clustering with dense representations</em>, Signal Processing with Adaptive Sparse Structured Representations (SPARS) 2013 Proceedings, Lausanne, Switzerland, 2013.</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, U. Rutishauser, and R.G Baraniuk, <em>Group sparse coding with collections of winner-take-all (WTA) circuits</em>, Organization for Computational Neurosciences (OCNS), BMC Neuroscience, 2012.</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, A.C. Sankaranarayanan, and R.G. Baraniuk, <em>Learning hybrid linear models via sparse recovery</em>, Signal Processing with Adaptive Sparse Structured Representations (SPARS) 2011 Proceedings.</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, D.H. Johnson, and R.G. Baraniuk, <em>Learning modular representations from global sparse coding networks</em>, Organization for Computational Neurosciences (OCNS), BMC Neuroscience 2010, 11(1): P131.</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, D.H. Johnson, and R.G. Baraniuk, <em>Sparse coding in modular networks</em>, Computational and systems neuroscience (COSYNE), 2010.</p>
+</li>
+<li>
+<p><strong>E.L. Dyer</strong>, D.H. Johnson, and R.G Baraniuk, <em>Sparse coding with population sketches</em>, Organization for Computational Neurosciences (OCNS), BMC Neuroscience 2009, 10(1):P132.</p>
+</li>
+</ul>
 
-                    
-                    <tr>
-                    <td>14:40-15:00</td>
-                    <td>Discussion with Alex Szalay</td>
-                    <td>511e</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>15:00-16:00</td>
-                        <td><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-dpwoodru" style="color: rgb(204,229,255)">David Woodruff</a>, Sketching as a Tool for Linear Algebra and Recent Developments</td>
-                        <td>511e</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>16:00-16:30</td>
-                        <td>Afternoon Coffee Break</td>
-                        <td></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>16:30-17:30</td>
-                        <td><a href="http://www.ece.rice.edu/~richb" style="color: rgb(204,229,255)">Richard G. Baraniuk</a>, Low-dimensional inference with high dimensional data</td>
-                        <td>511e</td>
-                    </tr>
-                    
-
-                    <tr>
-                    <td>17:30-17:40</td>
-                    <td>Closing Remarks</td>
-                    <td>511e</td>
-                    </tr>
-                    
-                    <tr>
-                    <td>17:45-18:30</td>
-                    <td>Open Discussion</td>
-                    <td>511e</td>
-                    </tr>
-                    
-                    </table>
-
-
-
-
-
-
-<!--                     <p class="text-center">*All events take place in the Bloomberg Center for Physics and Astronomy and are subject to change</p> -->
-</div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div id="posters" class="posters">
-        <div class="container">
-            <div class="row">
-                <h2 class="section-apply-heading text-center">Posters</h2>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <li> Ryan Burmeister, Gavin Taylor, Tom Goldstein: <em>Cosine Fourier bases for kernel function approximation </em></p>
-                    <li> Tom Goldstein: <em>Distributed model fitting with transpose reduction ADMM </em></li></p>
-                    <li>William Gray Roncal: <em>Images to graphs for inference</em></li></p>
-                    <li> Furong Huang, Animashree Anandkumar, Christian Borgs, Jennifer Chayes, Ernest Fraenkel, Michael Hawrylycz, Ed Lein, Alessandro Ingrosso, Srinivas Turaga: <em>Discovering neuronal cell types and their gene expression profiles using a spatial point process mixture model</em></li></p>
-                    <li> Christoph Kirst: <em>Network communication surfing on dynamical reference states</em> </li></p>
-                    <li> Azalia Mirhoseini, Eva L. Dyer, Ebrahim Songhori, Richard G. Baraniuk, Farinaz Koushanfar: <em>RankMap: A framework for distributed learning from massive dense datasets </em></li></p>
-                    <li>Anish K. Simhal, Will Gray Roncal, Alexander D. Baden, Kunal A. Lillaney , Kwame Kutten, Michael I. Miller, Joshua T. Vogelstein, Randal Burns, Li Ye, Raju Tomer, Karl Deisseroth, Guillermo Sapiro: <em>Computational statistics for whole brain CLARITY analysis using the Open Connectome Project</em></li></p>
-                    <li>Prateek Tandon: <em>Poisson and bayesian estimation of low signal source and noise components </em></li></p>
-                    <li> Ekaterina Taralova, Tony Jebara, Rafael Yuste: <em>Functional graphical models of mouse visual cortex</em></li></p>
-                    <li>Xundong Wu, Yong Wu, Ligia Toro, Enrico Stefani: <em> A new iterative convolutional neural network algorithm improves electron microscopy image segmentation</em></li></p>
+<h3><a id="Theses_56"></a>Theses</h3>
+<ul>
+<li>New Theory and Methods for Signals in Unions of Subspaces, Ph.D. Thesis, Dept. of Electrical and Computer Engineering, Rice University, September, 2014.</li>
+<li>Endogenous Sparse Recovery, M.S. Thesis, Dept. of Electrical and Computer Engineering, Rice University, October, 2011.</li>
+</ul>
+<hr>
                 </div>
             </div>
         </div>
-    
+    </div>
+
+        <div id="code" class="schedule">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-apply-heading text-center">Code</h2>
+                <div class="col-lg-8 col-lg-offset-2">
+                <ul>
+				<li>XBRAIN: X-ray Brain Reconstruction, Analytics, and INference (<a href="http://github.com/neurodata/xbrain/tree/master/code">Code</a>)</li>
+				<li>RankMap API for Distributed Learning (<a href="https://github.com/azalia/RankMap">Code</a>, <a href="http://arxiv.org/abs/1503.08169">Paper</a>)</li>
+				<li>Self-Expressive Decomposition (SEED) (<a href="https://github.com/KordingLab/SEED">Code</a>, <a href="http://arxiv.org/abs/1505.00824">Paper</a>)</li>
+				<li>Accelerated Sequential Incoherence Sampling (oASIS) (<a href="https://bitbucket.org/rjp2/oasis/">Code</a>, <a href="http://arxiv.org/abs/1505.05208">Paper</a>)</li>
+				<li>Neural Event Recovery and Detection via Sparsity (NERDS) (<a href="https://github.com/KordingLab/nerds">Code</a>, <a href="http://www.ece.rice.edu/~eld1/pubs/Dyer_ICASSP2013.pdf">Paper</a>)</li>
+				<li>Rapid Characterization of FPGAs with Matrix Completion (<a href="http://www.ece.rice.edu/~eld1/software/RapidFPGA.zip">Code</a>)</li>
+				</ul>
+				<hr>
+                </div>
+            </div>
+        </div>
+    	</div>
+
+    	<div id="data" class="schedule">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-apply-heading text-center">Data</h2>
+                <div class="col-lg-8 col-lg-offset-2">
+                <ul>
+				<li>X-ray image volumes and manual annotations <a href="http://github.com/neurodata/xbrain/tree/master/data">XBRAIN (micro-CT) data</a></li>
+				</ul>
+                </div>
+            </div>
+        </div>
+    	</div>
+
     <div class="page-footer">
         <div class="container">
             <div class="row" id="footer-text">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>BigNeuro Workshop</strong></h4>
                     <p>Want to get in touch? Contact <a href="mailto:bigneurodata@gmail.com">bigneurodata@gmail.com</a>!</p>
-                    <p>Organized by <a href="http://klab.smpp.northwestern.edu/wiki/index.php5/Eva_Dyer">Eva Dyer</a>, <a href="http://jovo.me/" target="_blank">Joshua T. Vogelstein</a>, <a href="http://bigneuro.com/" target="_blank">Konrad P. Kording</a>, <a href="http://www.jeremyfreeman.net/" target="_blank">Jeremy Freeman</a>, <a href="http://toliaslab.org/" target="_blank">Andreas Tolias</a>.
-                    </p>
-                    </p>
                     <p>Copyright &copy; Hack@NeuroData 2015</p>
                 </div>
             </div>
